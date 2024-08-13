@@ -12,18 +12,12 @@
 
 
 <h2 align="center">⚒️ Languages ⚒️</h2>
-<br/>
 <div align="center">
-    <img src="https://skillicons.dev/icons?i=java,javascript,python,react,html,css,typescript," />
+    <img src="https://skillicons.dev/icons?i=exel,java,javascript,python,react,html,css,typescript," />
 </div>
-<br/>
 <h2 align="center">⚒️ Tools ⚒️</h2>
 <br/>
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=linux,windows,github,mysql,vscode," /><br>
+  <img src="https://skillicons.dev/icons?i=exel,linux,windows,github,mysql,vscode," /><br>
 </div>
-
-<br/>
-
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=b8860b&height=120&section=footer"/>
-
