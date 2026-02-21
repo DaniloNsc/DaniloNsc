@@ -1,23 +1,97 @@
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=b8860b&height=120&section=header"/>
-  
-  [![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=b8860b&size=35&center=true&vCenter=true&width=1000&lines=HELLO,+MY+NAME+is+Danilo+Gabriel+Do+Nascimento;I'm+18+years+old;I+am+from+Curitiba,+PR;I+study+analysis+and+systems+development;Studying+in+PucPR;Be+Welcome!+:%29)](https://git.io/typing-svg)
+# RAM Optimizer Windows
 
-<div align="center">  
-  <img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=DaniloNsc&show_icons=true&count_private=true&hide_border=true&title_color=b8860b&icon_color=b8860b&text_color=c0c0c0&bg_color=0d1117" alt="Danilo Gabriel Do Nascimento github stats" /> 
-  <img width="41%" height="195px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=DaniloNsc&layout=compact&hide_border=true&title_color=b8860b&text_color=b8860b&bg_color=0d1117" />
-</div>
+Automação em **PowerShell** para executar o **RAMMap** (Microsoft Sysinternals) em intervalo configurável, facilitando rotina de limpeza/gestão de memória no Windows.
 
+---
 
-[![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=DaniloNsc&bg_color=000000&color=b8860b&line=daa520&point=c0c0c0&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+## 📌 1) Visão Geral
 
+Este projeto contém um script PowerShell pronto para uso com:
+- Validação do executável do RAMMap
+- Execução em loop contínuo
+- Intervalo customizável
+- Modo de execução única (`-RunOnce`)
+- Logs simples no console
 
-<h2 align="center">⚒️ Languages ⚒️</h2>
-<div align="center">
-    <img src="https://skillicons.dev/icons?i=exel,java,javascript,python,react,html,css,typescript," />
-</div>
-<h2 align="center">⚒️ Tools ⚒️</h2>
-<br/>
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=exel,linux,windows,github,mysql,vscode," /><br>
-</div>
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=b8860b&height=120&section=footer"/>
+---
+
+## 🧱 2) Estrutura do Projeto
+
+```txt
+ram-optimizer-windows/
+├── script.ps1   # Script principal
+└── README.md    # Documentação técnica
+```
+
+---
+
+## ⚙️ 3) Funcionamento Interno
+
+Fluxo do `script.ps1`:
+1. Recebe parâmetros (`-RamMapPath`, `-IntervalSeconds`, `-RunOnce`)
+2. Valida se o executável existe
+3. Executa o RAMMap com `Start-Process`
+4. Se `-RunOnce` estiver ativo, encerra
+5. Caso contrário, aguarda e repete
+
+### Parâmetros
+- `-RamMapPath` (string): caminho do `RAMMap.exe`
+- `-IntervalSeconds` (int): intervalo entre execuções (mín: 5s)
+- `-RunOnce` (switch): executa uma vez e encerra
+
+---
+
+## ▶️ 4) Como Executar
+
+### Pré-requisitos
+- Windows 10/11
+- PowerShell 5+
+- RAMMap instalado
+
+### Execução padrão (loop a cada 5 min)
+```powershell
+powershell -ExecutionPolicy Bypass -File .\script.ps1
+```
+
+### Execução com caminho customizado e 2 minutos
+```powershell
+powershell -ExecutionPolicy Bypass -File .\script.ps1 -RamMapPath "C:\Tools\RAMMap\RAMMap.exe" -IntervalSeconds 120
+```
+
+### Execução única
+```powershell
+powershell -ExecutionPolicy Bypass -File .\script.ps1 -RunOnce
+```
+
+---
+
+## 🔐 5) Segurança
+
+Este projeto **não altera** registro do Windows, serviços do sistema ou arquivos críticos.
+
+---
+
+## 🚀 6) Como criar um repositório separado só para este projeto
+
+Se hoje seu código está em um repositório geral/perfil, faça assim:
+
+1. Crie um novo repositório no GitHub (exemplo: `ram-optimizer-windows`).
+2. No seu computador, mantenha apenas os arquivos deste projeto (`script.ps1` e `README.md`) em uma pasta própria.
+3. Rode os comandos abaixo dentro da pasta do projeto:
+
+```bash
+git init
+git add .
+git commit -m "feat: initial RAM Optimizer Windows project"
+git branch -M main
+git remote add origin https://github.com/<seu-usuario>/ram-optimizer-windows.git
+git push -u origin main
+```
+
+4. Pronto: projeto isolado, documentação técnica e histórico próprio.
+
+---
+
+## 📄 Licença
+
+Uso educacional e demonstração técnica.
