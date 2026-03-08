@@ -1,99 +1,176 @@
-# RAM Optimizer Windows
+Kich
 
-Automação em **PowerShell** para executar o **RAMMap** (Microsoft Sysinternals) em intervalo configurável, facilitando a rotina de monitoramento/gestão de memória no Windows.
+**`Desenvolvedora FullStack`**
 
----
+Me chamo Larissa Vitória Kich, tenho 20 anos e sou natural do Rio Grande do Sul. Concluí o ensino médio no IFRS, com o curso técnico em informática. Atualmente, estou cursando Análise e Desenvolvimento de Sistemas na PUCRS. Sou apaixonada por tecnologia e compartilho meu conhecimento através do meu canal no YouTube "[Larissa Kich](https://www.youtube.com/@larissakich)", onde ensino a criar projetos web, e também através do Instagram, com o perfil chamado "[Dev em Dev](https://www.instagram.com/dev_em_dev/)".
 
-## 📌 1) Visão geral
-
-Este projeto contém um script PowerShell pronto para uso com:
-- Validação do caminho do executável do RAMMap
-- Execução em loop contínuo
-- Intervalo customizável
-- Modo de execução única (`-RunOnce`)
-- Logs simples no console
-- Proteção contra múltiplas instâncias simultâneas do RAMMap
-
----
-
-## 🧱 2) Estrutura do projeto
-
-```txt
-ram-optimizer-windows/
-├── script.ps1   # Script principal
-└── README.md    # Documentação técnica
-```
-
----
-
-## ⚙️ 3) Funcionamento interno
-
-Fluxo do `script.ps1`:
-1. Recebe parâmetros (`-RamMapPath`, `-IntervalSeconds`, `-RunOnce`)
-2. Normaliza o caminho e valida se o executável existe
-3. Verifica se já existe instância do RAMMap em execução
-4. Executa o RAMMap com `Start-Process` (somente se não houver instância ativa)
-5. Se `-RunOnce` estiver ativo, encerra
-6. Caso contrário, aguarda e repete
-
-### Parâmetros
-- `-RamMapPath` (string): caminho do `RAMMap.exe`
-- `-IntervalSeconds` (int): intervalo entre execuções (mínimo: 5s)
-- `-RunOnce` (switch): executa uma vez e encerra
+<p align="left">
+    <a href="https://www.youtube.com/@larissakich?sub_confirmation=1">
+        <img 
+            alt="youtube subscribers" 
+            title="Inscreva-se no meu canal" 
+            src="https://custom-icon-badges.demolab.com/youtube/channel/subscribers/UCo-gJ8RnTn5akHqHvO55DVA?color=%23E05D44&label=Inscreva-se&logo=video&logoColor=white&style=for-the-badge&labelColor=CE4630"
+        />
+    </a>
+    <a href="https://www.youtube.com/@larissakich">
+        <img 
+            alt="youtube views" 
+            title="Vizualizações no YouTube" 
+            src="https://custom-icon-badges.demolab.com/youtube/channel/views/UCo-gJ8RnTn5akHqHvO55DVA?color=%23E1AD0E&logo=eye&logoColor=white&style=for-the-badge&labelColor=C79600"
+        />
+    </a> 
+    <a href="https://github.com/Larissakich?tab=repositories&sort=stargazers">
+        <img 
+            alt="Total de estrelas" 
+            title="Total de estrelas GitHub" 
+            src="https://custom-icon-badges.demolab.com/github/stars/Larissakich?color=55960c&style=for-the-badge&labelColor=488207&logo=star&label=estrelas"
+        />
+    </a>
+    <a href="https://github.com/Larissakich?tab=followers">
+        <img 
+            alt="Seguidores" 
+            title="Me siga no GitHub" 
+            src="https://custom-icon-badges.demolab.com/github/followers/Larissakich?color=236ad3&labelColor=1155ba&style=for-the-badge&logo=github&label=Seguidores&logoColor=white"
+        />
+    </a>
+</p>
 
 ---
 
-## ▶️ 4) Como executar
+### 🤖 Linguagens e Tecnologias
 
-### Pré-requisitos
-- Windows 10/11
-- PowerShell 5+
-- RAMMap instalado
+<img 
+    align="left" 
+    alt="HTML"
+    title="HTML" 
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="CSS" 
+    title="CSS"
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="JavaScript" 
+    title="JavaScript"
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="TypeScript"
+    title="TypeScript" 
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="React"
+    title="React" 
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="Next.js" 
+    title="Next.js"
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="Bootstrap"
+    title="Bootstrap" 
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="Tailwind" 
+    title="Tailwind"
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="SASS" 
+    title="SASS"
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="PHP" 
+    title="PHP"
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="Laravel" 
+    title="Laravel"
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="JQuery" 
+    title="JQuery"
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="Git" 
+    title="Git"
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="Python" 
+    title="Python"
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" 
+/>
 
-### Execução padrão (loop a cada 5 minutos)
-```powershell
-powershell -ExecutionPolicy Bypass -File .\script.ps1
-```
+<br/>
+<br/>
 
-### Execução com caminho customizado e intervalo de 2 minutos
-```powershell
-powershell -ExecutionPolicy Bypass -File .\script.ps1 -RamMapPath "C:\Tools\RAMMap\RAMMap.exe" -IntervalSeconds 120
-```
+### 📊 Estatísticas
 
-### Execução única
-```powershell
-powershell -ExecutionPolicy Bypass -File .\script.ps1 -RunOnce
-```
+<p>
+  <img 
+    align="left" 
+    alt="GitHub Stats" 
+    height="200" 
+    style="padding-right: 10px;" 
+    src="https://github-readme-stats.vercel.app/api?username=Larissakich&show_icons=true&theme=tokyonight&include_all_commits=true&locale=pt-br" 
+  />
 
----
+<img 
+      align="left" 
+      alt="GitHub Stats" 
+      height="200" 
+      src="https://github-readme-stats.vercel.app/api/top-langs/?username=larissakich&theme=tokyonight&layout=compact&custom_title=Tecnologias&langs_count=9" 
+  />
 
-## 🔐 5) Segurança
-
-Este projeto **não altera** registro do Windows, serviços do sistema ou arquivos críticos.
-
----
-
-## 🚀 6) Como criar um repositório separado só para este projeto
-
-Se hoje o código está em um repositório geral/perfil, faça assim:
-
-1. Crie um novo repositório no GitHub (exemplo: `ram-optimizer-windows`).
-2. No computador local, mantenha apenas os arquivos deste projeto (`script.ps1` e `README.md`) em uma pasta própria.
-3. Rode os comandos abaixo dentro da pasta do projeto:
-
-```bash
-git init
-git add .
-git commit -m "feat: initial RAM Optimizer Windows project"
-git branch -M main
-git remote add origin https://github.com/<seu-usuario>/ram-optimizer-windows.git
-git push -u origin main
-```
-
-4. Pronto: projeto isolado, documentação técnica e histórico próprio.
-
----
-
-## 📄 Licença
-
-Uso educacional e demonstração técnica.
+</p>
