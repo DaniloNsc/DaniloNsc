@@ -1,6 +1,4 @@
-Kich
-
-**`Desenvolvedora FullStack`**
+**`Desenvolvedor FullStack`**
 
 Me chamo Danilo Gabriel do Nascimento, tenho 19 anos e sou natural de Curitiba. Atualmente curso Análise e Desenvolvimento de Sistemas na PUCPR e sou apaixonado por tecnologia. 🚀
 <p align="left">
