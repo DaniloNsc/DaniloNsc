@@ -5,6 +5,7 @@ Me chamo Danilo Gabriel do Nascimento, tenho 19 anos e sou natural de Curitiba. 
     <a href="https://github.com/Larissakich?tab=repositories&sort=stargazers">
 
 ---
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=DaniloNsc&theme=shadow-red&hide_border=verdadeiro&short_numbers=verdadeiro&mode=weekly)](https://git.io/streak-stats)
 
 ### 🤖 Linguagens e Tecnologias
 
