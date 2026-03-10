@@ -4,7 +4,6 @@
 <img src="https://capsule-render.vercel.app/api?type=rect&color=AA0000&height=2&section=header" width="100%"/>
 [![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=DaniloNsc&bg_color=000000&color=AA0000&line=AA0000&point=c0c0c0&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 <img src="https://capsule-render.vercel.app/api?type=rect&color=AA0000&height=2&section=header" width="100%"/>
-
 <img src="https://img.shields.io/badge/🚀 Programming Languages%20Skills-4A0000?style=for-the-badge&logoColor=white"/>
 
 <p align="left">  
